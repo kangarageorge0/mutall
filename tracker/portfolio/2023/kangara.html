@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- 
+    Use icons. -->
+    <script
+      src="https://kit.fontawesome.com/4fd11e560e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+
+      * {
+        font-size: large;
+      }
+      
+      .container {
+        display: flex;
+        padding-top: 2%;
+      }
+
+      .plan {
+        width: 73%;
+        margin-top: 2%;
+      }
+
+      .dev {
+        width: 25%;
+        text-align: center;
+        margin-top: 5%;
+        font-weight: 500;
+        font-size: 1.5rem;
+      }
+      @media (max-width: 600px){
+        tr, td,th:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: normal;
+       }
+      }
+
+      .table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      td,
+      th {
+        border: 2px solid #000;
+        text-align: left;
+        padding: 8px;
+      }
+      tr:nth-child(even) {
+        /* background: #fee7e7; */
+      }
+
+      th {
+        text-align: center;
+        background: #fff;
+      }
+
+      .img_container {
+        margin-top: 10%;
+      }
+
+      img {
+        width: 90%;
+        border-radius: 8%;
+      }
+
+      figcaption {
+        margin-top: 5%;
+        font-size: larger;
+      }
+
+      .title {
+        font-size: 2rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1%;
+      }
+      
+      .hide {
+        display: none;
+      }
+
+    .myDIV:hover + .hide {
+      display: block;
+      color: black;
+    }
+      
+      
+      .greetings {
+        font-weight: 800;
+        font-size: 1.5rem;
+      }
+
+      a {
+        text-decoration: none;
+        margin-left: 5%;
+      }
+
+      i {
+        font-size: 1.5rem;
+      }
+
+      /* For viewing in smalll mobile screens */
+      @media (max-width: 768px){
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+    </style>
+  </head>
+  <body onload="typeWriter()">
+    <div id="container" class="container">
+      <div id="dev" class="dev">
+        <!--
+            Type setting greetings. -->
+        <p id="greetings" class="greetings"></p>
+        I am George Kang'ara.
+        <figure>
+          <div class="a"><img src="http://drive.google.com/uc?export=view&id=10KYtxL82ANblZbwrAgMc_R7WoHTu8KKD" >
+          <figcaption>
+            My Stack: <br/>
+            <a href="https://github.com/kangarageorge0/">
+              <i class="fa-brands fa-github"></i>Github
+            </a>
+          </figcaption>
+        </figure>
+      </div>
+      
+      <div id="plan" class="plan">
+        <div id="title" class="title">2023 ROADMAP</div>
+        <table class="table">
+          <thead>
+            <th>Application</th>
+            <th>Problem</th>
+            <th>Plan</th>
+            <th>Outcome</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Shule</td>
+              <td>
+                <div class="myDIV">Customaization</div>
+                <div class="hide">
+                    <ul>
+                        <li> Design, add a label for ticking, next to the crestlet row <br></li>
+                        <li>Customization, different pages should be created from one page the main one, the others can be created by dragging the the factors to the page header or row factor </li>
+                        <li> Have a restore button when a filter is selected and an empty page appers, this takes the user back to the previous populated page </li>
+                    </ul>
+                </div><br><br>
+                <div class="myDIV">CRUD</div>
+                <div class="hide">
+                    <ul>
+                        <li>Fixing a wrong input by allowing editing of results on the web-page</li>
+                        <li>Add an option that will allow loading of data in case the school has more data to load (sheet js work)</li>
+                        <li>Add the mean standard score on the table footer</li>
+                        <li>Merging of results by checking of dublicates</li>
+                    </ul>
+                </div><br><br>
+                <div class="myDIV">Manage code complexity</div>
+                <div class="hide">
+                    <ul>
+                        <li>Arranging the code in a object oriented manner that will help us navigate through the code using classes and their methods</li>
+                    </ul>
+                </div>
+              </td> 
+              <td>
+                <ul>
+                  <li>The plan is to develop a system that will be user-friendly and which teachers can easily access students grades anytime. <br></li>
+                  <li>They can also be able to edit scores that are wrong. <br></li>
+                  <li>The system will also provide different pages for users to view i.e one class result, by stream or for each student.</li>
+                  <li>Use Object Oriented programming</li>
+                </ul>
+              </td>
+              <td>
+                  <ul>
+                      <li>The system will help in managing school results and make it easier to retrieve results anytime and anywhere. The school can also load scores that are not in the system</li>
+                      <li>Get better managed code that will be easy to manage, debug and teach</li>
+                  </ul>
+                
+              </td>
+            </tr>
+            <tr>
+            <tr> 
+              <td>Textbook </td>
+              <td>
+               <div class="myDIV">Visit at least five schools</div>
+                <div class="hide">
+                    <ul>
+                        <li>I should visit at least five schools and bookshops so that i can collect data that will help me in structuring a working database that will help me in my system</li>
+                    </ul>
+                </div>
+              </td>
+              <td>
+               The system will be like an online shop where users will trade in textbooks where a user lists the textbook they have and sell them.
+              </td>
+              <td>
+                The outcome will helping parent minimize cost where they will have access to books that are cheaper and maybe trade in with the ones they have.
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script>
+
+      function display_greetings() {
+        var today = new Date();
+        var hourNow = today.getHours();
+        var greeting;
+
+        if (hourNow > 15) {
+          greeting = "Good Evening";
+        } else if (hourNow > 12) {
+          greeting = "Good Afternoon";
+        } else if (hourNow > 0) {
+          greeting = "Good Morning";
+        } else {
+          greeting = "Welcome";
+        }
+
+        return greeting;
+      }
+
+      var i = 0;
+      var txt = display_greetings();
+      var speed = 250;
+
+      function typeWriter() {
+        if (i < txt.length) {
+          document.getElementById("greetings").innerHTML += txt.charAt(i);
+          i++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    </script>
+
+  </body>
+</html>

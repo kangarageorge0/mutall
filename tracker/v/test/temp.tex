@@ -1,0 +1,10 @@
+<pre>SELECT 
+	
+	`mutallco_rental`.`agreement`.`agreement`  as `agreement_selector`,
+	concat_ws('/', `mutallco_rental`.`agreement`.`start_date` , `mutallco_rental`.`room`.`uid` , `mutallco_rental`.`client`.`name` ) as `friend__` 
+FROM 
+	`mutallco_rental`.`agreement`
+inner join 	 `mutallco_rental`.`room` ON  `agreement`.`room` = `room`.`room`
+inner join 	 `mutallco_rental`.`client` ON  `agreement`.`client` = `client`.`client`
+
+</pre>
